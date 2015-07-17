@@ -41,11 +41,11 @@ make shell_shellcode
 ```
 Compile `orw.c` and test the machine code ( shellcode )
 ```
-make corw
+make corw && ./orw.out
 ```
 Compile `shell.c` and test the machine code ( shellcode )
 ```
-make cshell
+make cshell && ./shell.out
 ```
 
 You can clean the `*.bin`, `*.o`, `*.out`... by using `make clean`
