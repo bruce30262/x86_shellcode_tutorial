@@ -1,7 +1,7 @@
 BITS 32
 
 section  .data              ; declaring our .text segment
-  global  _start            ; telling where program execution should start
+global  _start              ; telling where program execution should start
 
 _start:                     ; this is where code starts getting exec'ed
     jmp ed

