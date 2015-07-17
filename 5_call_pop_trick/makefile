@@ -7,13 +7,13 @@ shell: shell.s
 orw_shellcode: orw.s
 	nasm -f bin -o code orw.s && xxd -i code
 
-shell_shellcode: orw.s
+shell_shellcode: shell.s
 	nasm -f bin -o code shell.s && xxd -i code
 
 corw: orw.c
 	gcc -z execstack -m32 -o orw.out orw.c
 
-cshell: orw.c
+cshell: shell.c
 	gcc -z execstack -m32 -o shell.out shell.c
 
 .PHONY: clean
