@@ -1,5 +1,6 @@
 # x86_shellcode_tutorial
 A training course for BambooFox  
+Here is the [silde](https://drive.google.com/file/d/0B7UcjiibMqcDZjByazl0WGhWQ00/view) & the [record](https://www.youtube.com/watch?v=auv-64HUBw8) of the course ( both in Chinese )  
 
 ## Building
 ### 0_execve_binsh ~ 3_open_read_write_position_independent  
